@@ -62,7 +62,7 @@ export default function GamesGrid() {
           </p>
         </motion.div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-3">
           {GAMES.map((game, index) => {
             const tc = tagColors[index % tagColors.length];
             return (
@@ -81,7 +81,7 @@ export default function GamesGrid() {
                     alt={game.name}
                     width={600}
                     height={400}
-                    className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="h-28 w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-48"
                   />
                   {/* Tag badge — each card gets a different neon color */}
                   <span
@@ -97,17 +97,17 @@ export default function GamesGrid() {
                   </span>
                 </div>
 
-                {/* Content */}
-                <div className="flex flex-1 flex-col gap-3 p-5">
+              {/* Content */}
+              <div className="flex flex-1 flex-col gap-2 p-3 sm:gap-3 sm:p-5">
                   <div className="flex items-start justify-between gap-2">
                     <h3
-                      className="text-[1rem] font-semibold text-white"
+                      className="text-[0.8rem] font-semibold text-white sm:text-[1rem]"
                       style={{ fontFamily: "var(--font-display)" }}
                     >
                       {game.name}
                     </h3>
                     <span
-                      className="shrink-0 rounded-full px-2.5 py-0.5 text-[0.7rem]"
+                      className="shrink-0 rounded-full px-2 py-0.5 text-[0.65rem] sm:px-2.5 sm:text-[0.7rem]"
                       style={{
                         border: `1px solid ${tc.border}`,
                         color: tc.color,
@@ -118,7 +118,7 @@ export default function GamesGrid() {
                       {game.capacity}
                     </span>
                   </div>
-                  <p className="text-[0.88rem] leading-relaxed text-[var(--text-muted)]">
+                  <p className="hidden text-[0.88rem] leading-relaxed text-[var(--text-muted)] sm:block">
                     {game.description}
                   </p>
                   <div className="mt-auto pt-2">
