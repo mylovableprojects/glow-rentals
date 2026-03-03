@@ -171,9 +171,12 @@ export default function Nav() {
 
             {/* Desktop CTA */}
             <div className="hidden md:flex">
-              <a href="#contact" className="nav-cta-wrap">
+              <button
+                onClick={() => window.dispatchEvent(new CustomEvent("openQuoteModal"))}
+                className="nav-cta-wrap border-0 bg-transparent p-0 cursor-pointer"
+              >
                 <span className="nav-cta-inner">Get a Quote</span>
-              </a>
+              </button>
             </div>
 
             {/* Mobile hamburger */}
@@ -289,11 +292,9 @@ export default function Nav() {
                 transition={{ delay: NAV_LINKS.length * 0.07 + 0.05, duration: 0.3 }}
                 className="mt-4"
               >
-                <a
-                  href="#contact"
-                  className="nav-cta-wrap"
-                  onClick={() => setMenuOpen(false)}
-                  style={{ fontSize: "1rem" }}
+                  <button
+                  className="nav-cta-wrap border-0 bg-transparent p-0 cursor-pointer"
+                  onClick={() => { setMenuOpen(false); window.dispatchEvent(new CustomEvent("openQuoteModal")); }}
                 >
                   <span
                     className="nav-cta-inner"
@@ -301,7 +302,7 @@ export default function Nav() {
                   >
                     Get a Quote
                   </span>
-                </a>
+                </button>
               </motion.div>
             </nav>
           </motion.div>

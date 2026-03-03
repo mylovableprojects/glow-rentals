@@ -77,12 +77,12 @@ export default function CTA() {
               package with pricing. No obligation, fast response.
             </p>
             <div className="mt-2 flex flex-wrap items-center justify-center gap-3">
-              <a
-                href="mailto:hello@yourcompany.com"
+              <button
+                onClick={() => window.dispatchEvent(new CustomEvent("openQuoteModal"))}
                 className="btn btn-primary btn-pulse px-9 py-3 text-base"
               >
                 Request a Quote
-              </a>
+              </button>
               <a
                 href="tel:+10000000000"
                 className="btn btn-outline px-8 py-3 text-base"

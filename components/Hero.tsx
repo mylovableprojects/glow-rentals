@@ -94,9 +94,12 @@ export default function Hero() {
             <a href="#games" className="btn btn-primary btn-pulse px-8 py-3 text-base">
               Browse Games
             </a>
-            <a href="#contact" className="btn btn-outline px-8 py-3 text-base">
+            <button
+              onClick={() => window.dispatchEvent(new CustomEvent("openQuoteModal"))}
+              className="btn btn-outline px-8 py-3 text-base"
+            >
               Get a Quote
-            </a>
+            </button>
           </motion.div>
 
           {/* Social proof strip */}
