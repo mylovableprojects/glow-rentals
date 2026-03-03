@@ -1,5 +1,26 @@
-export const COMPANY_NAME = "GlowRentals";
+export const COMPANY_NAME = "WOW GLOW RENTALS";
 export const COMPANY_CITY = "Chicago";
+export const COMPANY_STATE = "IL";
+export const COMPANY_PHONE = "(312) 555-0000";
+export const COMPANY_EMAIL = "hello@glowrentals.com";
+
+export const SERVICE_AREAS = [
+  "Chicago",
+  "Naperville",
+  "Evanston",
+  "Oak Park",
+  "Schaumburg",
+  "Aurora",
+  "Downers Grove",
+  "Arlington Heights",
+  "Highland Park",
+  "Glenview",
+  "Northbrook",
+  "Palatine",
+  "Wilmette",
+  "Joliet",
+  "Elgin",
+];
 
 export const NAV_LINKS = [
   { href: "#games", label: "Games" },
@@ -22,55 +43,55 @@ export const GAMES: Game[] = [
     id: "led-ping-pong",
     name: "LED Ping Pong",
     description:
-      "A full-size ping pong table wrapped in glowing LED strips. Tournament-ready and guaranteed to be the center of attention.",
+      "A full-size ping pong table blazing with RGB rainbow colors. Instantly becomes the centerpiece of any event — guests line up to play all night.",
     capacity: "2–4 players",
-    image: "https://picsum.photos/seed/pingpong/600/400",
+    image: "/games/pingpong.png",
     tag: "Fan Favorite",
   },
   {
-    id: "led-mini-golf",
-    name: "LED Mini-Golf",
+    id: "led-dance-floor",
+    name: "LED Dance Floor",
     description:
-      "Modular neon mini-golf holes we configure to fit any venue. Glowing balls, neon rails, and lit-up cups included.",
-    capacity: "Up to 10 players",
-    image: "https://picsum.photos/seed/minigolf/600/400",
+      "An infinity-mirror LED dance floor with programmable color zones. Creates an electric nightclub atmosphere at any venue, indoors or out.",
+    capacity: "Up to 30 guests",
+    image: "/games/dancefloor.png",
+    tag: "Showstopper",
+  },
+  {
+    id: "led-mini-golf",
+    name: "LED Mini Golf",
+    description:
+      "Multi-hole LED putting course with glowing greens, neon rails, and lit-up flags. We configure the layout to fit your venue perfectly.",
+    capacity: "Up to 12 players",
+    image: "/games/minigolf.png",
     tag: "Best for Weddings",
   },
   {
     id: "led-cornhole",
     name: "LED Cornhole",
     description:
-      "Illuminated cornhole boards with glowing bags — perfect on patios, lawns, and indoor venues with the lights turned down.",
+      "Pro-grade illuminated cornhole boards with glowing bags in cyan and pink. Equally stunning indoors or on a patio after dark.",
     capacity: "2–4 players",
-    image: "https://picsum.photos/seed/cornhole/600/400",
+    image: "/games/cornhole.png",
     tag: "Outdoor Ready",
   },
   {
-    id: "led-beer-pong",
-    name: "LED Beer Pong",
+    id: "led-furniture",
+    name: "LED Lounge Furniture",
     description:
-      "A glowing, professional-grade beer pong table with LED cups and racks. The instant icebreaker at any adult event.",
-    capacity: "2–8 players",
-    image: "https://picsum.photos/seed/beerpong/600/400",
-    tag: "Party Must-Have",
+      "Premium RGB LED sofas, chairs, and tables that glow in any color. Transforms a plain space into a glowing VIP lounge in minutes.",
+    capacity: "Any group size",
+    image: "/games/furniture.png",
+    tag: "VIP Upgrade",
   },
   {
-    id: "glow-bocce",
-    name: "Glow Bocce Ball",
+    id: "led-four-in-a-row",
+    name: "Giant LED 4 in a Row",
     description:
-      "Oversized, glow-in-the-dark bocce balls that look spectacular after dark. Easy to play, impossible not to love.",
-    capacity: "2–8 players",
-    image: "https://picsum.photos/seed/bocce/600/400",
-    tag: "Unique Experience",
-  },
-  {
-    id: "led-shuffleboard",
-    name: "LED Shuffleboard",
-    description:
-      "A lit-up shuffleboard table that brings classic lounge energy with a modern glow twist. Great for corporate events.",
-    capacity: "2–4 players",
-    image: "https://picsum.photos/seed/shuffleboard/600/400",
-    tag: "Corporate Pick",
+      "A towering illuminated Connect Four with glowing LED discs in red and blue. Brings serious competitive energy and major wow factor.",
+    capacity: "2–10 players",
+    image: "/games/fourinarow.png",
+    tag: "Crowd Pleaser",
   },
 ];
 

@@ -56,7 +56,7 @@ export default function Hero() {
         >
           {/* Eyebrow label */}
           <span className="glow-badge inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[0.78rem] font-semibold">
-            ✦ LED Game Rentals for Every Event
+            ✦ Chicago&apos;s LED Party Game Rentals
           </span>
 
           {/* Headline */}
@@ -115,11 +115,11 @@ export default function Hero() {
             </span>
             <span className="flex items-center gap-1.5">
               <span style={{ color: "#39ff14", textShadow: "0 0 12px rgba(57,255,20,0.9)" }}>✓</span>
-              Weddings, Corporate &amp; More
+              Weddings, Corporate, Birthdays &amp; More
             </span>
             <span className="flex items-center gap-1.5">
               <span style={{ color: "#ff0090", textShadow: "0 0 12px rgba(255,0,144,0.9)" }}>✓</span>
-              Serving the Chicago Area
+              Chicago, IL &amp; Suburbs
             </span>
           </motion.div>
         </motion.div>
