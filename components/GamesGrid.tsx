@@ -122,16 +122,16 @@ export default function GamesGrid() {
                     {game.description}
                   </p>
                   <div className="mt-auto pt-2">
-                    <a
-                      href="#contact"
-                      className="text-[0.82rem] font-semibold transition-all"
+                    <button
+                      onClick={() => window.dispatchEvent(new CustomEvent("openQuoteModal"))}
+                      className="text-[0.82rem] font-semibold transition-all cursor-pointer border-0 bg-transparent p-0"
                       style={{
                         color: tc.color,
                         textShadow: tc.shadow,
                       }}
                     >
                       Check availability →
-                    </a>
+                    </button>
                   </div>
                 </div>
               </motion.article>
